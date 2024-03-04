@@ -1,0 +1,78 @@
+import time 
+import random
+
+#intro to the app or whatever
+print('hey')
+time.sleep(2)
+print('im probably not gonna have much reccommendations to give you skull emoji but youll cope')
+time.sleep(3.5)
+print('anyway, what kind of genre do you like?')
+time.sleep(2)
+print('romance, thriller, fiction, historical, science fiction, action, or comedy?')
+
+answer = input()
+
+#defines the kind of answers the user can input
+option1 = 'romance'
+option2 = 'thriller'
+option3 = 'fiction'
+option4 = 'historical'
+option5 = 'science fiction'
+option6 = 'action'
+option7 = 'comedy'
+
+romance_list = ['Far Far Away by Tom Mcneal', 'Pride and Prejudice by Jane Austen', 'The Song of Achilles by Madeline Miller']
+thriller_list = ['ait by J. Kent Messum', 'It by Stephen King', 'Sail by James Patterson', 'The Cavemans Valentine by George Dawes Green']
+fiction_list = ['Anne of Green Gables by L. M. Montgomery', 'Twilight by Stephenie Meyer', 'We Were Liars by E. Lockhart']
+historical_list = ['All The Light We Cannot See by Anthony Doerr', 'Memoirs of a Geisha by Arthur Golden', 'Conjure Women by Afia Atakora']
+sciencefiction_list = ['The Martian by Andy Weir', 'Cinder by Marissa Meyer', 'The Maze Runner by james Dashner']
+action_list = ['Drift by L.T. Ryan', 'The Hunger Games by Suzanne Collins','Journey to the Center of the Earth by Jules Verne']
+comedy_list = ['Born a Crime by Trevor Noah', 'Naked by David Sedaris', 'A Dirty Job by Christopher Moore']
+
+#if the user picks romance novels
+if str(answer) == option1:
+    book = random.choice(romance_list)
+    time.sleep(1)
+    print('okay, you might like this one: ' + book)
+print('\n')
+
+#if the user picks thriller novels
+if str(answer) == option2:
+    book = random.choice(thriller_list)
+    print('i wish i read more thiller, but anyway, heres that rec: ' + book)
+print('\n')
+
+#if the user picks fiction novels
+if str(answer) == option3:
+    book = random.choice(fiction_list)
+    time.sleep(1)
+    print('okay, cool, we got: ' + book)
+print('\n')
+
+#if the user picks historical novels
+if str(answer) == option4:
+    book = random.choice(historical_list)
+    time.sleep(1)
+    print('ur weird for this...but ok: ' + book)
+print('\n')
+
+#if the user picks science fiction
+if str(answer) == option5:
+    book = random.choice(sciencefiction_list)
+    time.sleep(1)
+    print('k. here u go: ' + book)
+print('\n')
+
+#if the user picks action novels
+if str(answer) == option6:
+    book = random.choice(action_list)
+    time.sleep(1)
+    print('okay, here you go: ' + book)
+print('\n')
+
+#if the user picks comedy novels
+if str(answer) == option7:
+    book = random.choice(comedy_list)
+    time.sleep(1)
+    print('cool. here: ' + book)
+print('\n')
